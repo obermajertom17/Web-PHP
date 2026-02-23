@@ -1,0 +1,20 @@
+/* Simple layout for the profile page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background: #f7f7f8;
+  color: #222;
+}
+main {
+  max-width: 720px;
+  margin: 48px auto;
+  background: #fff;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border-radius: 8px;
+}
+h1 { margin: 0 0 8px 0; }
+h2 { margin-top: 20px; }
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 6px; }
