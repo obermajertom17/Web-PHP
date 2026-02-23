@@ -40,7 +40,18 @@ $interests = isset($data['interests']) && is_array($data['interests']) ? $data['
       <?php endif; ?>
     </section>
 
-    <!-- Interests/projects section will be added in the next commit -->
+    <section>
+      <h2>Zájmy / Projekty</h2>
+      <?php if (!empty($interests)): ?>
+        <ul>
+        <?php foreach ($interests as $item): ?>
+          <li><?php echo htmlspecialchars($item, ENT_QUOTES, 'UTF-8'); ?></li>
+        <?php endforeach; ?>
+        </ul>
+      <?php else: ?>
+        <p>Žádné zájmy nebo projekty k zobrazení.</p>
+      <?php endif; ?>
+    </section>
 
   </main>
 </body>
